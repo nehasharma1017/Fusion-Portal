@@ -6,8 +6,8 @@
     >
         <v-container fluid class="blue-grey darken-4">
             <v-layout row wrap>
-                <img src="../assets/m_Center.svg" style="height:50px;width:50px;margin-right:1%" 
-                class="orange darken-1">
+                <img src="../assets/m_Center.svg" 
+                class="orange darken-1 headerheight">
                 <span style="font-family:roboto;color:white;"
                 class="font-weight-medium display-1">
                 Account Center</span>
@@ -88,4 +88,7 @@ export default {
     text-decoration: none;
   }
 
+</style>
+<style>
+@import '../assets/css/main.css'
 </style>
