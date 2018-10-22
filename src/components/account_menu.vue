@@ -20,7 +20,7 @@
                     class="font-weight-regular title">
                     {{item.title}}</span>
                     <ul style="color:white;">
-                        <li v-for="item in item.items" :key="item.id">
+                        <li @click.prevent="hideIt()" v-for="item in item.items" :key="item.id">
                         <a href="#" >{{item}}</a>
                         </li>
                     </ul>

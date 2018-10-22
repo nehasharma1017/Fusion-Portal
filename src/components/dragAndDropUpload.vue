@@ -122,7 +122,7 @@
                     </v-layout>
                     <v-layout column align-end>
                         <v-flex xs1>
-                            <v-btn class="button" color="error">Reset</v-btn>
+                            <v-btn @click="reset_function()" class="button" color="error">Reset</v-btn>
                         </v-flex>
                     </v-layout>
                     </v-flex>
@@ -184,7 +184,16 @@ export default {
       let inputFile = document.getElementById("fileInput");
       this.files.push(inputFile.files.item(0).name);
       //this.fileUpload(event);
+    },
+    reset_function(){
+      this.dateFrom=null;
+      this.dateTo=null;   
+      this.selectedAuthor= null;
+      this.selectedFileType= [];
+      this.selectedCategory= null;
+
     }
+
   },
   computed: {
     updateObject() {
